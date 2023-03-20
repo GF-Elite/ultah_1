@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ucapan Ulang Tahun</title>
+    <style>
+      /* Styling untuk halaman web */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+      }
+      .message {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ucapan Ulang Tahun</h1>
+      <p class="message">Selamat Ulang Tahun!</p>
+      <button class="button" onclick="playMusic()">Klik disini untuk mendengarkan musik!</button>
+    </div>
+    
+    <audio id="music" src="happy_birthday.mp3"></audio>
+    
+    <script>
+      // JavaScript untuk memutar musik saat tombol ditekan
+      function playMusic() {
+        var music = document.getElementById("music");
+        music.play();
+      }
+    </script>
+  </body>
+</html>
